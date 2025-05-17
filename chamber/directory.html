@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:title"
+      content="Vadym Chemariev - WDD 231 - Web Frontend Development"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      name="description"
+      content="Assignment portal for Vadym Chemariev in WDD 231: Web Frontend Development at Brigham Young University - Idaho"
+    />
+    <meta property="og:locale" content="en_US" />
+    <meta
+      property="og:image"
+      content="https://1vadim.github.io/wdd231/images/sunflower.webp"
+    />
+    <meta property="og:image:width" content="360" />
+    <meta property="og:image:height" content="360" />
+    <meta property="og:url" content="https://1vadim.github.io/wdd231/" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/hamburger.js"></script>
+    <script defer src="scripts/weather.js"></script>
+    <script defer src="scripts/members.js"></script>
+
+    <link rel="icon" href="favicon.ico" />
+    <title>Vadym Chemariev - WDD 231 - Web Frontend Development</title>
+
+    <meta name="author" content="Vadym Chemariev" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo-title-container">
+          <img src="images/sunflower.png" alt="chamber_logo" class="logo" />
+          <span> <h1>Kyiv</h1>            Chamber of Commerce and Industry</span>
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()"></div>
+
+        <nav id="animated">
+          <ul class="nav-list">
+            <li>
+              <a href="#" class="active">Home</a>
+            </li>
+            <li><a href="#">Directory</a></li>
+            <li>
+              <a href="https://1vadim.github.io/wdd231/chamber/directory.html"
+                >Join</a
+              >
+            </li>
+            <li>
+              <a href="https://1vadim.github.io/wdd231/chamber/directory.html"
+                >Discover</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="keynote-banner">
+      <img src="images/keynote.png" alt="Keynote Speaker" />
+      <a href="#" class="keynote-button">Keynote Tickets</a>
+    </section>
+    <main>
+      <h1>Home</h1>
+      <div class="info-row">
+        <section class="info-block">
+          <h2>Events</h2>
+          <p>Upcoming events info here...</p>
+        </section>
+        <section class="info-block" id="current-weather">
+          <h2>Current Weather</h2>
+          <p id="weather-description">Loading...</p>
+          <p id="temperature"></p>
+          <p id="humidity"></p>
+          <p id="wind-speed"></p>
+        </section>
+        <section class="info-block" id="weather-forecast">
+          <h2>Weather Forecast</h2>
+          <div id="forecast"></div>
+        </section>
+      </div>
+      <h1>Business Directory</h1>
+      <div class="menu">
+        <button id="grid">⏹️ Grid</button>
+        <button id="list">📄 List</button>
+      </div>
+      <div class="cards-wrapper">
+        <div id="cards"></div>
+        </div>
+    </main>
+    <footer>
+      <div class="address"><p><strong>Kyiv Chamber of Commerce and Industry</strong> <br> 55 B., Khmelnitskogo str., <br>Kyiv, 01601, Ukraine <br><a href="mailto:info@kcci.org.ua">info@kcci.org.ua</a> <br>(+380) 444820301</p></div>
+      <div class="date"> <p>&copy; <span id="year"></span> Vadym Chemariev, Ukraine</p>
+      <p>Last modification: <span id="lastModified"></span></p></div>
+    </footer>
+  </body>
+</html>
