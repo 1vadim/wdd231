@@ -249,6 +249,19 @@ p {
 	margin: 0;
 }
 
+.menu {
+	margin: 1rem auto;
+	border: 1px solid #333399;
+	padding: 0.5rem;
+	background-color: #004466;
+	text-align: center;
+}
+
+.menu button {
+	padding: 1rem;
+	font-weight: 700;
+}
+
 .cards-wrapper {
 	margin: 2rem 0.5rem;
 	padding: 1rem;
@@ -256,10 +269,7 @@ p {
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 	background-color: #f0e9e9;
   border-radius: 4px;
-}
-
-#cards {
-	display: grid;
+  display: grid;
 	grid-gap: 0.5rem;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
@@ -280,11 +290,63 @@ section > p {
 	text-align: center;
 }
 
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 0.5rem;
+	}
+
+.grid section {
+	text-align: center;
+}
+
+.grid img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 1rem #555;
+}
+
+.grid section > * {
+	margin: 0.1rem;
+}
+
+.grid h3 {
+	font-size: 1.2rem;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none; 
+}
+
+.list section h3 {
+	font-size: 1rem;
+}
+
+.list section:nth-child(even) {
+	background-color: #bbb;
+}
+
+
 img {
 	width: auto;
-	max-width: 325px;
+	max-width: 140px;
 	box-shadow: 0 0 30px #777;
-	height: 200px;
+	height: 140px;
 	border: 1px solid #111;
 }
 
@@ -353,6 +415,11 @@ li > img {
     
   }
 }
+
+section a {
+	font-family: Arial, sans-serif;
+	font-size: 0.85rem;
+	color: navy;
 
 body,
 main,

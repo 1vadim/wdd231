@@ -9,7 +9,7 @@
       "membership-level": 1
     },
     {
-      "name": "Limited Company Worldwide Manufacturing І.D.",
+      "name": "Limited Company Worldwide Manufacturing",
       "address": "Lenina, 114, m.KYIV, 08131, UKRAINE",
       "phone-number": 380444905155,
       "website": "http://www.wwm.ua",
@@ -20,15 +20,15 @@
       "name": "HLB Ukraine Ltd",
       "address": "vul.Husovskoho,11/11,of.1, KYIV,01011, UKRAINE",
       "phone-number": 380445691900,
-      "website": "https://www.hlb.com.ua/",
+      "website": "https://www.hlb.com.ua",
       "image":"images/hlb.png",
       "membership-level": 3
     },
     {
-      "name": "Elfa LaboratoryLtd",
+      "name": "Elfa Laboratory Ltd",
       "address": "Sim`yi Sosninykh str,9, KYIV,03148, UKRAINE",
       "phone-number": 380444514740,
-      "website": "http://www.elfa.ua/",
+      "website": "http://www.elfa.ua",
       "image":"images/elfa.png",
       "membership-level": 1
     },
@@ -44,7 +44,7 @@
       "name": "BІZNES TSENTR FARMATSІYA",
       "address": "Str.Sholudenka, 18, c.Vyshhorod, 07300, UKRAINE",
       "phone-number": 380442772007,
-      "website": "http://bc-pharmacy.com.ua/",
+      "website": "http://bc-pharmacy.com.ua",
       "image":"images/farma.png",
       "membership-level": 3
     },
@@ -52,7 +52,7 @@
       "name": "Kyiv Vitamin Plant",
       "address": "vul.Kopylivska, 38, KYIV, 01073, UKRAINE",
       "phone-number": 380444610308,
-      "website": "https://www.vitamin.com.ua/uk/",
+      "website": "https://www.vitamin.com.ua/uk",
       "image":"images/vita.png",
       "membership-level": 1
     }
