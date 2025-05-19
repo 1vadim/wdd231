@@ -145,7 +145,7 @@ section {
   margin-bottom: 2rem;
 }
 
-h2 {
+section h2 {
   color: #1e2a38;
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
@@ -456,7 +456,7 @@ nav {
 .weather-container section {
   width: 48%;
 }
-}
+
 
 #current-weather, #weather-forecast {
 background-color: #f9f9f9;
