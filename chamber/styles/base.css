@@ -344,7 +344,7 @@ section > p {
 }
 
 
-img {
+article img {
 	width: auto;
 	max-width: 140px;
 	box-shadow: 0 0 30px #777;
