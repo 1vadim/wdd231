@@ -57,36 +57,6 @@ button:hover {
   background-color: #aac;
 }
 
-.course-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-}
-
-.course-card {
-  background-color: #eee;
-  border: 1px solid #aaa;
-  border-radius: 10px;
-  padding: 1rem;
-  width: 300px;
-}
-
-.completed {
-  background-color: #d8f0d8;
-  border-left: 6px solid green;
-}
-
-.incomplete {
-  background-color: #f0d8d8;
-  border-left: 6px solid red;
-}
-
-.credit-info {
-  text-align: center;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
 
 header {
   background-color: #1e2a38;
@@ -120,6 +90,7 @@ nav a {
   padding: 0.5rem 1rem;
   border-radius: 5px;
   transition: background-color 0.2s ease-in-out;
+  background-color: #004466;
 }
 
 nav a:hover {
@@ -127,7 +98,7 @@ nav a:hover {
 }
 
 nav a.active {
-  background-color: #ff6b6b;
+  background-color: #b30000;
   font-weight: bold;
 }
 
@@ -152,12 +123,14 @@ section h2 {
 }
 
 footer {
-  background-color: #eaeaea;
+  background-color: #fbf9f9;
   padding: 1rem;
   text-align: center;
   font-size: 0.9rem;
   color: #555;
-}
+  border: 1px solid #555;
+  border-radius: 4px;
+  }
 
 footer p {
   margin-bottom: 0.5rem;
@@ -215,34 +188,6 @@ footer {
   justify-content: space-around;
   margin: 20px;
   text-align: left;
-}
-
-.key {
-	position: absolute;
-	top: 5px;
-	right: 5px;
-	padding: 0.5rem;
-	background-color: black;
-	color: white;
-	display: grid;
-	grid-template-columns: 0.8rem 1fr;
-	grid-gap: 0.25rem;
-}
-
-#keytitle {
-	font-size: larger;
-	grid-column: 1 / 3;
-}
-
-.key > div {
-	width: 0.75rem;
-	height: 0.75rem;
-	border: 1px solid #bbb;
-}
-
-.key > p {
-	display: inline;
-	font-size: 0.75rem;
 }
 
 p {
@@ -357,21 +302,6 @@ li > img {
 	height: 30px;
 }
 
-.caption {
-	position: absolute;
-	top: 1.5rem;
-	right: 2rem;
-	border: 1px solid #ccc;
-	background-color: lightyellow;
-	padding: 0.25rem;
-	display: grid;
-	align-items: center;
-	grid-template-columns: 1rem 1fr;
-}
-
-.un {
-	list-style: none;
-}
 
 @media (max-width: 740px) {
   .menu-toggle {
