@@ -28,8 +28,14 @@ function displayResults(data) {
   currentTemp.innerHTML = `Temperature: ${data.list[0].main.temp}&deg;C`;
   const iconsrc = `https://openweathermap.org/img/wn/${data.list[0].weather[0].icon}@2x.png`;
   let desc = data.list[0].weather[0].description;
-  weatherIcon.setAttribute('src', iconsrc);
-  weatherIcon.setAttribute('alt', desc);
+  const fig = document.querySelector("figure");
+  let imageIcon = document.createElement("img");
+  imageIcon.setAttribute("src", iconsrc);
+    imageIcon.setAttribute("alt", desc);
+    imageIcon.setAttribute("loading", "lazy");
+    imageIcon.setAttribute("width", "140");
+    imageIcon.setAttribute("height", "140");
+    fig.appendChild(imageIcon);
   captionDesc.textContent = `${desc}`;
   
   const forecast = data.list
