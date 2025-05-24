@@ -6,7 +6,7 @@
       "phone-number": 380442470682,
       "website": "http://www.doctor-pirogov.com",
       "image":"images/tvk.webp",
-      "membership-level": 1
+      "level": 1
     },
     {
       "name": "Limited Company Worldwide Manufacturing",
@@ -14,7 +14,7 @@
       "phone-number": 380444905155,
       "website": "http://www.wwm.ua",
       "image":"images/wwm.webp",
-      "membership-level": 2
+      "level": 2
     },
     {
       "name": "HLB Ukraine Ltd",
@@ -22,7 +22,7 @@
       "phone-number": 380445691900,
       "website": "https://www.hlb.com.ua",
       "image":"images/hlb.webp",
-      "membership-level": 3
+      "level": 3
     },
     {
       "name": "Elfa Laboratory Ltd",
@@ -30,7 +30,7 @@
       "phone-number": 380444514740,
       "website": "http://www.elfa.ua",
       "image":"images/elfa.webp",
-      "membership-level": 1
+      "level": 1
     },
     {
       "name": "Intitution Joint-Stock Company Kyiv Plant RADAR",
@@ -38,7 +38,7 @@
       "phone-number": 380445299303,
       "website": "http://www.radar.net.ua",
       "image":"images/radar.webp",
-      "membership-level": 2
+      "level": 2
     },
     {
       "name": "BІZNES TSENTR FARMATSІYA",
@@ -46,7 +46,7 @@
       "phone-number": 380442772007,
       "website": "http://bc-pharmacy.com.ua",
       "image":"images/farma.webp",
-      "membership-level": 3
+      "level": 3
     },
     {
       "name": "Kyiv Vitamin Plant",
@@ -54,7 +54,7 @@
       "phone-number": 380444610308,
       "website": "https://www.vitamin.com.ua/uk",
       "image":"images/vita.webp",
-      "membership-level": 1
+      "level": 1
     }
   ]
 }

@@ -8,7 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <meta
       property="og:title"
-      content="Vadym Chemariev - WDD 231 - Web Frontend Development"
+      content="Kyiv Chamber of Commerce"
     />
     <meta property="og:type" content="website" />
     <meta property="og:description" content="Explore Kyiv Chamber of Commerce: view our business directory, upcoming events, current and forecasted weather, and join the community to grow your business network.">
@@ -28,8 +28,8 @@
     <link rel="stylesheet" href="styles/base.css" />
     <script defer src="scripts/getdates.js"></script>
     <script defer src="scripts/hamburger.js"></script>
-    <script defer src="scripts/weather-dir.js"></script>
-    <script defer src="scripts/members-dir.js"></script>
+    <script defer src="scripts/weather.js"></script>
+    <script defer src="scripts/members.js"></script>
 
     <link rel="icon" href="favicon.ico" />
     <title>Vadym Chemariev - WDD 231 - Web Frontend Development</title>
@@ -50,9 +50,9 @@
         <nav id="animated">
           <ul class="nav-list">
             <li>
-              <a href="https://1vadim.github.io/wdd231/chamber/index.html">Home</a>
+              <a href="https://1vadim.github.io/wdd231/chamber/index.html" class="active">Home</a>
             </li>
-            <li><a href="https://1vadim.github.io/wdd231/chamber/directory.html" class="active">Directory</a></li>
+            <li><a href="https://1vadim.github.io/wdd231/chamber/directory.html" >Directory</a></li>
             <li>
               <a href="https://1vadim.github.io/wdd231/chamber/directory.html"
                 >Join</a
@@ -80,10 +80,13 @@
         </section>
         <section class="info-block" id="current-weather">
           <h2>Current Weather</h2>
-          <p id="weather-description">Loading...</p>
-          <p id="temperature"></p>
-          <p id="humidity"></p>
-          <p id="wind-speed"></p>
+          <p id="city"></p>
+          <p id="current-temp"></p>
+  <figure>
+    <img id="weather-icon" src="" alt="" />
+    <figcaption></figcaption>
+  </figure>
+  </div>
         </section>
         <section class="info-block" id="weather-forecast">
           <h2>Weather Forecast</h2>
@@ -95,7 +98,14 @@
         <button id="grid">⏹️ Grid</button>
         <button id="list">📄 List</button>
       </div>
-      <article class="cards-wrapper"></article>
+      <article class="spotlight-container"></article>
+    
+      <!-- <div class="spotlights">
+        <button id="services">Services</button>
+        <button id="export">Export Support</button>
+        <button id="magazine">Online-Magazine</button>
+      </div> -->
+      
     </main>
     <footer>
       <div class="address">

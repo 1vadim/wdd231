@@ -1,27 +1,45 @@
-async function fetchWeather() {
+const city = document.querySelector('#city');
+const currentTemp = document.querySelector('#current-temp');
+const weatherIcon = document.querySelector('#weather-icon');
+const captionDesc = document.querySelector('figcaption');
+const forecastDiv = document.querySelector('#forecast');
+
+const urlWeather = '//api.openweathermap.org/data/2.5/forecast?id=703448&appid=41de10cc104017bff4e7c2fdc89f812f&units=metric';
+
+async function apiFetch() {
   try {
-    const response = await fetch('https://wttr.in/Vienna?format=j1');
-    const data = await response.json();
-
-    const current = data.current_condition[0];
-    document.getElementById('weather-description').textContent = `Condition: ${current.weatherDesc[0].value}`;
-    document.getElementById('temperature').textContent = `Temperature: ${current.temp_C}°C`;
-    document.getElementById('humidity').textContent = `Humidity: ${current.humidity}%`;
-    document.getElementById('wind-speed').textContent = `Wind: ${current.windspeedKmph} km/h`;
-
-    const forecast = document.getElementById('forecast');
-    forecast.innerHTML = '';
-
-    for (let i = 0; i < 3; i++) {
-      const day = data.weather[i];
-      const forecastItem = document.createElement('div');
-      forecastItem.textContent = `${day.date}: High ${day.maxtempC}°C / Low ${day.mintempC}°C`;
-      forecast.appendChild(forecastItem);
+    const response = await fetch(urlWeather);
+    if (response.ok) {
+      const data = await response.json();
+      console.log(data); 
+      displayResults(data);
+    } else {
+        throw Error(await response.text());
     }
   } catch (error) {
-    console.error('Failed to fetch weather:', error);
-    document.getElementById('weather-description').textContent = 'Unable to load weather.';
+      console.log(error);
   }
 }
 
-fetchWeather();
+apiFetch();
+
+function displayResults(data) {
+  city.innerHTML = `<strong>${data.city.name}<strong>`
+  currentTemp.innerHTML = `Temperature: ${data.list[0].main.temp}&deg;C`;
+  const iconsrc = `https://openweathermap.org/img/wn/${data.list[0].weather[0].icon}@2x.png`;
+  let desc = data.list[0].weather[0].description;
+  weatherIcon.setAttribute('src', iconsrc);
+  weatherIcon.setAttribute('alt', desc);
+  captionDesc.textContent = `${desc}`;
+  
+  const forecast = data.list
+  .filter(item => item.dt_txt.includes("12:00:00"))
+  .slice(0, 3);
+
+  forecastDiv.innerHTML = forecast.map(day => {
+    const date = new Date(day.dt_txt).toLocaleDateString(undefined, { dateStyle: 'medium' });
+    return `<div class="forecast-day">
+      <strong>${date}</strong>: ${day.main.temp.toFixed(1)} °C
+    </div>`;
+  }).join('');
+}
