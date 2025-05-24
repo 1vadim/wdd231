@@ -315,6 +315,12 @@ li > img {
 	height: 30px;
 }
 
+figcaption {
+text-align: center;
+}
+
+
+
 
 @media (max-width: 740px) {
   .menu-toggle {

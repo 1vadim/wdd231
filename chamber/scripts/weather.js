@@ -1,7 +1,6 @@
 const city = document.querySelector('#city');
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
 const forecastDiv = document.querySelector('#forecast');
 
 const urlWeather = '//api.openweathermap.org/data/2.5/forecast?id=703448&appid=41de10cc104017bff4e7c2fdc89f812f&units=metric';
@@ -30,13 +29,15 @@ function displayResults(data) {
   let desc = data.list[0].weather[0].description;
   const fig = document.querySelector("figure");
   let imageIcon = document.createElement("img");
+  let figcapt = document.createElement("figcaption");
   imageIcon.setAttribute("src", iconsrc);
     imageIcon.setAttribute("alt", desc);
     imageIcon.setAttribute("loading", "lazy");
     imageIcon.setAttribute("width", "140");
     imageIcon.setAttribute("height", "140");
     fig.appendChild(imageIcon);
-  captionDesc.textContent = `${desc}`;
+    fig.appendChild(figcapt);
+  figcapt.textContent = `${desc}`;
   
   const forecast = data.list
   .filter(item => item.dt_txt.includes("12:00:00"))
