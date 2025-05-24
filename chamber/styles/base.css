@@ -45,9 +45,6 @@ body {
   flex: 1;
 }
 
-.nav-list {
-  flex: -1;
-}
 
 button {
   background-color: #cce;
