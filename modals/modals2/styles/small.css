@@ -1,0 +1,26 @@
+*{box-sizing: border-box;}
+
+#mydialog div {
+  display: grid;
+  grid-template-columns: auto 44px;
+background-color: aliceblue;
+padding: 5px;
+border-bottom: blue 1px solid;
+}
+
+#mydialog h2 {
+  margin: 0;
+  color: aquamarine;
+}
+
+#mydialog button {
+  margin: 0;
+  border: blue 1px solid;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #aaa;
+}
+
+#mydialog p {
+  padding: 10px;
+  color: blue;
+}

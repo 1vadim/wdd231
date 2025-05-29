@@ -95,7 +95,9 @@ function renderCourses(courseArray) {
       <h3>${course.subject} ${course.number}</h3>
       <p><strong>Credits:</strong> ${course.credits}</p>
     `;
-
+   card.addEventListener('click', () => {
+  displayCourseDetails(course);
+});
     courseList.appendChild(card);
   });
 }
