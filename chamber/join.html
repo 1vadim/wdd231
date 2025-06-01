@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta
+      property="og:title"
+      content="Kyiv Chamber of Commerce"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Explore Kyiv Chamber of Commerce: view our business directory, upcoming events, current and forecasted weather, and join the community to grow your business network.">
+    <meta
+      name="description"
+      content="Explore Kyiv Chamber of Commerce: view our business directory, upcoming events, current and forecasted weather, and join the community to grow your business network."
+    />
+    <meta property="og:locale" content="en_US" />
+    <meta
+      property="og:image"
+      content="https://1vadim.github.io/wdd231/images/sunflower.webp"
+    />
+    <meta property="og:image:width" content="360" />
+    <meta property="og:image:height" content="360" />
+    <meta property="og:url" content="https://1vadim.github.io/wdd231/" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/join.css" />
+    <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/hamburger.js"></script>
+    <!-- <script defer src="scripts/weather.js"></script> -->
+    <!-- <script defer src="scripts/members.js"></script> -->
+    <script defer src="scripts/join.js"></script>
+
+    <link rel="icon" href="favicon.ico" />
+    <title>Vadym Chemariev - WDD 231 - Web Frontend Development</title>
+
+    <meta name="author" content="Vadym Chemariev" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo-title-container">
+          <img src="images/sunflower.webp" alt="chamber_logo" class="logo" />
+          
+          <div>
+            <h2>Kyiv</h2>
+            <p>Chamber of Commerce and Industry</p>
+        </div>
+      </div>
+        <div class="menu-toggle" onclick="toggleMenu()"></div>
+
+        <nav id="animated">
+          <ul class="nav-list">
+            <li>
+              <a href="https://1vadim.github.io/wdd231/chamber/index.html" >Home</a>
+            </li>
+            <li><a href="https://1vadim.github.io/wdd231/chamber/directory.html" >Directory</a></li>
+            <li>
+              <a href="https://1vadim.github.io/wdd231/chamber/directory.html"
+                class="active">Join</a
+              >
+            </li>
+            <li>
+              <a href="https://1vadim.github.io/wdd231/chamber/directory.html"
+                >Discover</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="keynote-banner">
+      <img class="keynote" src="images/keynote.webp" alt="Keynote Speaker" />
+    </section>
+<main class="container">
+    <form method="get" action="thankyou.html" id="registration-form">
+      <h1>Register for Membership</h1>
+      <label>
+        First Name:
+        <input type="text" name="firstName" title="First Name" required autocomplete="given-name" />
+      </label>
+      <label>
+        Last Name:
+        <input type="text" name="lastName" title="Last Name" required autocomplete="family-name" />
+      </label>
+      <label>
+        Organizational Title:
+        <input type="text" name="orgTitle" title="Organizational Title" pattern="[A-Za-z\-\s]{7,}" autocomplete="organization-title" />
+      </label>
+      <label>
+        Email:
+        <input type="email" name="email" title="Email Address" placeholder="example@domain.com" required autocomplete="email" />
+      </label>
+      <label>
+        Mobile Phone:
+        <input type="tel" name="mobile" title="Mobile Phone Number" required autocomplete="tel" />
+      </label>
+      <label>
+        Business/Organization Name:
+        <input type="text" name="organization" title="Organization Name" required autocomplete="organization" />
+      </label>
+      <label>
+        Membership Level:
+        <select name="membershipLevel" title="Membership Level">
+          <option value="NP">NP Membership (Free)</option>
+          <option value="Bronze">Bronze Membership</option>
+          <option value="Silver">Silver Membership</option>
+          <option value="Gold">Gold Membership</option>
+        </select>
+      </label>
+      <label>
+        Organization Description:
+        <textarea name="orgDescription" title="Organization Description"></textarea>
+      </label>
+      <input type="hidden" name="timestamp" id="timestamp" />
+      <input type="submit" value="Submit Registration" />
+    </form>
+
+    <section class="membership-cards">
+      <div class="card" id="NP">
+  <h3>NP Membership</h3>
+  <button>View Benefits</button> 
+</div>
+<div class="card" id="Bronze">
+  <h3>Bronze Membership</h3>
+  <button>View Benefits</button> 
+</div>
+<div class="card" id="Silver">
+  <h3>Silver Membership</h3>
+  <button>View Benefits</button> 
+</div>
+<div class="card" id="Gold">
+  <h3>Gold Membership</h3>
+  <button>View Benefits</button> 
+</div>
+    </section>
+
+        <dialog class="modal" id="benefit-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 id="modal-title"></h3>
+          <button>&times;</button>
+        </div>
+        <ul id="modal-benefits"></ul>
+      </div>
+        </dialog>
+  </main>
+    <footer>
+      <div class="address">
+        <p>
+          <strong>Kyiv Chamber of Commerce and Industry</strong> <br />
+          55 B., Khmelnitskogo str., <br />Kyiv, 01601, Ukraine <br /><a
+            href="mailto:info@kcci.org.ua"
+            >info@kcci.org.ua</a
+          >
+          <br />(+380) 444820301
+        </p>
+      </div>
+      <div class="date">
+        <p>&copy; <span id="year"></span> Vadym Chemariev, Ukraine</p>
+        <p>Last modification: <span id="lastModified"></span></p>
+      </div>
+    </footer>
+  </body>
+</html>

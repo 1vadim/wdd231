@@ -1,0 +1,46 @@
+<!-- thankyou.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .summary {
+      background: #fff;
+      padding: 20px;
+      margin: 40px auto;
+      border-radius: 10px;
+      max-width: 600px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .summary h2 {
+      margin-top: 0;
+    }
+    .summary p {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="summary">
+    <h2>Thank You for Registering!</h2>
+    <p><strong>First Name:</strong> <span id="firstName"></span></p>
+    <p><strong>Last Name:</strong> <span id="lastName"></span></p>
+    <p><strong>Email:</strong> <span id="email"></span></p>
+    <p><strong>Mobile:</strong> <span id="mobile"></span></p>
+    <p><strong>Organization:</strong> <span id="organization"></span></p>
+    <p><strong>Submitted At:</strong> <span id="timestamp"></span></p>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const fields = ["firstName", "lastName", "email", "mobile", "organization", "timestamp"];
+
+    fields.forEach(field => {
+      document.getElementById(field).textContent = params.get(field) || "N/A";
+    });
+  </script>
+</body>
+</html>
