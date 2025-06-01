@@ -1,5 +1,5 @@
 const benefitDescriptions = {
-  "Non Profit": [
+  "Non-Profit": [
     "Access to public webinars",
     "Community support forum",
     "Listing in nonprofit directory"
