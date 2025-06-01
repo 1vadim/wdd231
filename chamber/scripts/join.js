@@ -1,5 +1,5 @@
 const benefitDescriptions = {
-  "NP": [
+  "Non Profit": [
     "Access to public webinars",
     "Community support forum",
     "Listing in nonprofit directory"
@@ -53,7 +53,7 @@ function showBenefits(level) {
   
 
  
-    title.textContent = `${level} Membership Benefits`;
+    title.textContent = `${level} Membership`;
     list.innerHTML = ""; 
     benefitDescriptions[level].forEach(item => {
       const li = document.createElement("li");
