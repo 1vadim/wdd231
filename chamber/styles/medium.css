@@ -2,9 +2,10 @@
   #allplaces div {
   grid-template-areas: 
   "photo name"
-  "photo . "
   "photo desc"
-  "photo address";
+  "photo address"
+  "more more"
+  ;
 }
 #allplaces div img {
   width: 300px;

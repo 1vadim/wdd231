@@ -7,6 +7,7 @@ const showHere = document.querySelector("#allplaces")
 async function  displayPlaces(places) {
   places.forEach(element => {
 const thecard = document.createElement('div')
+thecard.id = element.more
 
 const photo = document.createElement('img')
 photo.src = `images/${element.image}`
@@ -25,11 +26,44 @@ const desc = document.createElement('p')
 desc.innerText = element.description
 thecard.appendChild(desc)
 
+const more = document.createElement('button')
+more.textContent = "Learn More"
+more.id = "more"
+thecard.appendChild(more)
+
 showHere.appendChild(thecard)
   });
 }
 
 displayPlaces(places)
+
+const myclose = document.querySelector(".modal-header button");
+const mydialog = document.querySelector("#more-modal");
+const buttons = document.querySelectorAll("#allplaces button");
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const level = button.parentElement.id;
+      showMore(level);
+    });
+  });
+
+
+myclose.addEventListener("click", () => {
+  mydialog.close();
+  });
+
+function showMore(level) {
+  const title = document.getElementById("modal-title");
+  const list = document.getElementById("modal-more");
+    title.textContent = level;
+    list.innerHTML = ""; 
+    // benefitDescriptions[level].forEach(item => {
+    //   list.textContent = item;
+    //   });
+    mydialog.showModal();
+       
+  };
+
 
 const messageBox = document.getElementById('visitMessage');
     const messageText = document.getElementById('visitText');
