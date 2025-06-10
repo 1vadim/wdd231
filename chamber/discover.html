@@ -26,12 +26,12 @@
     <meta property="og:url" content="https://1vadim.github.io/wdd231/" />
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/join.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+        <link rel="stylesheet" href="styles/medium.css" />
+            <link rel="stylesheet" href="styles/large.css" />
     <script defer src="scripts/getdates.js"></script>
     <script defer src="scripts/hamburger.js"></script>
-    <!-- <script defer src="scripts/weather.js"></script> -->
-    <!-- <script defer src="scripts/members.js"></script> -->
-    <script defer src="scripts/join.js"></script>
+    <script defer src="scripts/places.js" type="module"></script>
 
     <link rel="icon" href="favicon.ico" />
     <title>Vadym Chemariev - WDD 231 - Web Frontend Development</title>
@@ -59,11 +59,11 @@
             <li><a href="https://1vadim.github.io/wdd231/chamber/directory.html" >Directory</a></li>
             <li>
               <a href="https://1vadim.github.io/wdd231/chamber/join.html"
-                class="active">Join</a
+                >Join</a
               >
             </li>
             <li>
-              <a href="https://1vadim.github.io/wdd231/chamber/discover.html"
+              <a href="https://1vadim.github.io/wdd231/chamber/discover.html" class="active"
                 >Discover</a
               >
             </li>
@@ -74,80 +74,15 @@
     <section class="keynote-banner">
       <img class="keynote" src="images/keynote.webp" alt="Keynote Speaker" />
     </section>
-<main class="container">
-    <form method="get" action="thankyou.html" id="registration-form">
-      <h1>Register for Membership</h1>
-      <label>
-        First Name:
-        <input type="text" name="firstName" title="First Name" required autocomplete="given-name" />
-      </label>
-      <label>
-        Last Name:
-        <input type="text" name="lastName" title="Last Name" required autocomplete="family-name" />
-      </label>
-      <label>
-        Organizational Title:
-        <input type="text" name="orgTitle" title="Organizational Title" pattern="[A-Za-z\-\s]{7,}" autocomplete="organization-title" />
-      </label>
-      <label>
-        Email:
-        <input type="email" name="email" title="Email Address" placeholder="example@domain.com" required autocomplete="email" />
-      </label>
-      <label>
-        Mobile Phone:
-        <input type="tel" name="mobile" title="Mobile Phone Number" placeholder="987-555-1234" required autocomplete="tel" />
-      </label>
-      <label>
-        Business/Organization Name:
-        <input type="text" name="organization" title="Organization Name" required autocomplete="organization" />
-      </label>
-      <label>
-        Membership Level:
-        <select name="membershipLevel" title="Membership Level">
-          <option value="NonProfit">Non Profit Membership (Free)</option>
-          <option value="Bronze">Bronze Membership</option>
-          <option value="Silver">Silver Membership</option>
-          <option value="Gold">Gold Membership</option>
-        </select>
-      </label>
-      <label>
-        Organization Description:
-        <textarea name="orgDescription" title="Organization Description"></textarea>
-      </label>
-      <input type="hidden" name="timestamp" id="timestamp" />
-      <input type="submit" value="Submit Registration" />
-    </form>
+<main>
+  <div id="visitMessage" class="overlay-message">
+    <button id="closeBtn" class="close-btn">✖</button>
+    <div id="visitText"></div>
+  </div>
+<div id="allplaces"></div>
 
-    <section class="membership-cards">
-      <h2>Membership Levels</h2>
-      <div class="card" id="Non-Profit">
-  <h3>Non Profit Membership</h3>
-  <button>Learn More</button> 
-</div>
-<div class="card" id="Bronze">
-  <h3>Bronze Membership</h3>
-  <button>Learn More</button> 
-</div>
-<div class="card" id="Silver">
-  <h3>Silver Membership</h3>
-  <button>Learn More</button> 
-</div>
-<div class="card" id="Gold">
-  <h3>Gold Membership</h3>
-  <button>Learn More</button> 
-</div>
-    </section>
-
-        <dialog class="modal" id="benefit-modal">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h3 id="modal-title"></h3>
-          <button>&times;</button>
-        </div>
-        <ul id="modal-benefits"></ul>
-      </div>
-        </dialog>
-  </main>
+</main>
+ 
     <footer>
       <div class="address">
         <p>

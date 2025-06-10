@@ -16,8 +16,8 @@ body {
   line-height: 1.6;
   background-color: #fefefe;
   color: #333;
-  padding: 0;
-  margin: 0;
+  /* padding: 0;
+  margin: 0; */
 }
 
 
@@ -48,8 +48,8 @@ body {
 
 button {
   background-color: #cce;
-  border: none;
-  padding: 0.5rem 1rem;
+  /* border: none; */
+  /* padding: 0.5rem 1rem; */
   cursor: pointer;
   font-weight: bold;
   border-radius: 8px;
