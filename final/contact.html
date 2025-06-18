@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta name="description" content="Get in touch with Neighbor. Request help, volunteer, or donate to support your community." />
+  <meta name="author" content="Vadym Chemariev" />
+  <meta property="og:title" content="Contact Neighbor - Get Involved or Request Help" />
+  <meta property="og:description" content="Fill out our forms to request support, volunteer for events, or make a donation." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta
+      property="og:image"
+      content="https://1vadim.github.io/wdd231/final/images/logo.png"
+    />
+  <meta property="og:url" content="https://1vadim.github.io/wdd231/final/contact.html" />
+  <meta property="og:image" content="favicon.ico" />
+  <title>Contact - Neighbor</title>
+  <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/style.css"   />
+    <script defer src="scripts/getdates.js"></script>
+  <script src="scripts/main.js" type="module"></script>
+  <script src="scripts/modal.js" type="module"></script>
+  <script src="scripts/utils.js" type="module"></script>
+  <script defer src="scripts/handler.js"></script>
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Neighbor</div>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="nav-menu">
+        &#9776;
+      </button>
+      <ul id="nav-menu" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+<section class="keynote-banner">
+      <img class="keynote" src="images/keynote.png" alt="Keynote Speaker" />
+      </section>
+  <main>
+    <section class="contact-forms">
+      <h1>Contact Us</h1>
+      <p>Whether you need help or want to help, we’re here to connect.</p>
+
+    <section class="contact-info">
+      <h1>Contact Neighbor</h1>
+      <p>For inquiries about volunteering, donations, or assistance, please use the forms below or reach out via phone or email.</p>
+      <address>
+        <strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a><br />
+        <strong>Email:</strong> <a href="mailto:info@neighbor-help.org">info@neighbor-help.org</a><br />
+        <strong>Address:</strong> 123 Community Lane, Helping City, HC 45678
+      </address>
+    </section>
+
+          <div class="form-section" id="donate">
+        <h2>Donation</h2>
+        <form action="form-action.html" method="get">
+          <label for="donorFirstName">First Name:</label>
+          <input type="text" id="donor-name" name="donorFirstName" required autocomplete="given-name"/>
+<label for="lastName">
+        Last Name:</label>
+        <input type="text" name="lastName" title="Last Name" required autocomplete="family-name" />
+      
+          <label for="donation-amount">Amount:</label>
+          <input type="number" id="donation-amount" name="donation-amount" required />
+
+          <label for="donor-email">Email:</label>
+          <input type="email" id="donor-email" name="donor-email" placeholder="example@domain.com" required autocomplete="email" required />
+     <label>
+        Business/Organization Name:</label>
+        <input type="text" name="organization" title="Organization Name" required autocomplete="organization" />
+      
+          <button type="submit" class="btn">Donate</button>
+        </form>
+      </div>
+    </section>
+
+<section class="form-section" id="volunteer-section">
+  <h2>Volunteer Registration</h2>
+  <form id="volunteer-form" action="form-handler.html" method="get" novalidate>
+    <label for="vol-name">Full Name:</label>
+    <input type="text" id="vol-name" name="Full Name" required />
+
+    <label for="vol-email">Email:</label>
+    <input type="email" id="vol-email" name="email" placeholder="example@domain.com" required autocomplete="email" required />
+
+    <label for="vol-phone">Phone Number:</label>
+    <input type="tel" id="vol-phone" name="phone" placeholder="987-555-1234" pattern="^\+?[0-9\s\-]{7,15}$" />
+
+    <label for="vol-area">Area of Interest:</label>
+    <select id="vol-area" name="interest" required>
+      <option value="">Select an area</option>
+      <option value="events">Events</option>
+      <option value="logistics">Logistics</option>
+      <option value="distribution">Distribution</option>
+      <option value="other">Other</option>
+    </select>
+    <label for="req-details">Additional Details:</label>
+    <textarea id="req-details" name="details" rows="4"></textarea>
+    <input type="hidden" name="time" id="timestamp" />
+    <button type="submit" class="btn">Register</button>
+  </form>
+</section>
+
+<section class="form-section" id="assistance-section">
+  <h2>Request Assistance</h2>
+  <form id="assistance-form" action="form-handler.html" method="get" novalidate>
+    <label for="req-name">Full Name:</label>
+    <input type="text" id="req-name" name="Full Name" required />
+
+    <label for="req-email">Email:</label>
+    <input type="email" id="req-email" name="email" required />
+
+    <label for="req-phone">Phone Number:</label>
+    <input type="tel" id="req-phone" name="phone" pattern="^\+?[0-9\s\-]{7,15}$" />
+
+    <label for="req-type">Type of Assistance:</label>
+    <select id="req-type" name="Assistance Type" required>
+      <option value="">Select a type</option>
+      <option value="food">Food</option>
+      <option value="housing">Housing</option>
+      <option value="financial">Financial Support</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="req-details">Additional Details:</label>
+    <textarea id="req-details" name="details" rows="4"></textarea>
+    <input type="hidden" name="time" id="timestamp1" />
+    <button type="submit" class="btn">Submit Request</button>
+  </form>
+</section>
+
+  </main>
+
+  <footer>
+     <div class="address">
+        <p>
+          <strong>Neighbor NGO</strong> <br />
+          123, Community Lane, <br />Helping City, HC 45678, Ukraine <br /><a
+            href="mailto:info@neighbor-help.org"
+            >info@neighbor-help.org</a
+          >
+          <br />+1 (234) 567-890
+        </p>
+      </div>
+      <div class="date">
+        <p>&copy; <span id="year"></span> Neighbor, Vadym Chemariev, Ukraine</p>
+        <p>Last modification: <span id="lastModified"></span></p>
+      </div>
+
+  </footer>
+</body>
+</html>

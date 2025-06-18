@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta name="description" content="Neighbor Events: Participate in community-building activities and volunteer events." />
+  <meta name="author" content="Vadym Chemariev" />
+  <meta property="og:title" content="Neighbor Events - Join the Movement" />
+  <meta property="og:description" content="View and join upcoming community events organized by Neighbor." />
+  <meta property="og:type" content="website" />
+ <meta property="og:locale" content="en_US" />
+  <meta
+      property="og:image"
+      content="https://1vadim.github.io/wdd231/final/images/logo.png"
+    />
+  <meta property="og:url" content="https://1vadim.github.io/wdd231/final/events.html" />
+  <meta property="og:image" content="favicon.ico" />
+  <title>Events - Neighbor</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/style.css"   />
+    <script defer src="scripts/getdates.js"></script>
+  <script src="scripts/events.js" type="module"></script>
+  <script src="scripts/main.js" type="module"></script>
+  <script src="scripts/modal.js" type="module"></script>
+  <script src="scripts/utils.js" type="module"></script>
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Neighbor</div>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="nav-menu">
+        &#9776;
+      </button>
+      <ul id="nav-menu" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html" class="active">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+<section class="keynote-banner">
+      <img class="keynote" src="images/keynote.png" alt="Keynote Speaker" />
+      </section>
+  <main>
+    <section class="events-page">
+      <h1>Community Events</h1>
+      <p>Get involved with our upcoming events and make a difference in your neighborhood.</p>
+      <div id="event-list"></div>
+    </section>
+
+        <div id="event-modal" class="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal">
+    <button class="modal-close" aria-label="Close modal">&times;</button>
+    <h2 id="modal-title" class="modal-title"></h2>
+    <div class="modal-body"></div>
+  </div>
+</div>
+  </main>
+
+  <footer>
+       <div class="address">
+        <p>
+          <strong>Neighbor NGO</strong> <br />
+          123, Community Lane, <br />Helping City, HC 45678, Ukraine <br /><a
+            href="mailto:info@neighbor-help.org"
+            >info@neighbor-help.org</a
+          >
+          <br />+1 (234) 567-890
+        </p>
+      </div>
+      <div class="date">
+        <p>&copy; <span id="year"></span> Neighbor, Vadym Chemariev, Ukraine</p>
+        <p>Last modification: <span id="lastModified"></span></p>
+      </div>
+
+  </footer>
+
+ 
+</body>
+</html>

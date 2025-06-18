@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <meta
+      name="description"
+      content="Neighbor: Community help and support network. Volunteer, donate, and stay informed."
+    />
+    <meta name="author" content="Vadym Chemariev" />
+    <meta
+      property="og:title"
+      content="Neighbor - Connect and Support Your Community"
+    />
+    <meta
+      property="og:description"
+      content="Join Neighbor to help, connect, and support those in need through events, donations, and volunteer work."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta
+      property="og:image"
+      content="https://1vadim.github.io/wdd231/final/images/logo.png"
+    />
+    <meta property="og:url" content="https://1vadim.github.io/wdd231/final/" />
+    <meta property="og:image" content="favicon.ico" />
+    <title>Neighbor - Community Connection</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/weather.js"></script>
+    <script src="scripts/events.js" type="module"></script>
+    <script src="scripts/main.js" type="module"></script>
+    <script src="scripts/modal.js" type="module"></script>
+    <script src="scripts/utils.js" type="module"></script>
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div>
+          <img
+            src="images/logo.png"
+            alt="chamber_logo"
+            class="logo"
+            width="50"
+          />
+        </div>
+        <div class="logo">Neighbor</div>
+        <button
+          class="hamburger"
+          aria-label="Menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          &#9776;
+        </button>
+        <ul id="nav-menu" class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="keynote-banner">
+      <img class="keynote" src="images/keynote.png" alt="Keynote Speaker" />
+    </section>
+    <main>
+      <section class="hero">
+        <h1>Welcome to Neighbor</h1>
+        <p>
+          Connecting people through support, donations, and volunteering
+          opportunities.
+        </p>
+      </section>
+
+      <div class="info-row">
+        <section class="info-block" id="current-weather">
+          <h2>Current Weather</h2>
+          <p id="city"></p>
+          <p id="current-temp"></p>
+          <figure></figure>
+        </section>
+
+        <section class="info-block" id="weather-forecast">
+          <h2>Weather Forecast</h2>
+          <div id="forecast"></div>
+        </section>
+      </div>
+
+      <section class="projects">
+        <h2>Current & Completed Projects</h2>
+        <div class="projects-container">
+          <article class="project">
+            <h3>Food Bank Expansion</h3>
+            <p>
+              Expanding food access to underserved neighborhoods through local
+              partnerships.
+            </p>
+          </article>
+          <article class="project">
+            <h3>Housing Aid Initiative</h3>
+            <p>Renovating vacant homes for temporary family housing.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="get-involved">
+        <h2>Ways to Get Involved</h2>
+        <div class="involve-options">
+          <div>
+            <h3>Volunteer</h3>
+            <p>Register to help with events, distribution, and logistics.</p>
+            <a href="contact.html#volunteer-form" class="btn">Sign Up</a>
+          </div>
+          <div>
+            <h3>Donate</h3>
+            <p>
+              Your contribution helps provide food, housing, and support to
+              families.
+            </p>
+            <a href="contact.html#donate" class="btn">Donate Now</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="featured-events">
+        <h2>Upcoming Community Events</h2>
+        <a href="events.html" class="btn">Learn more</a>
+      </section>
+
+      <section class="blog-preview">
+        <h2>News & Updates</h2>
+        <div class="blog-cards">
+          <article>
+            <h3>Backpack Drive Success</h3>
+            <p>Over 300 backpacks delivered to students in need.</p>
+          </article>
+          <article>
+            <h3>Winter Shelter Program</h3>
+            <p>
+              Our winter initiative helped over 150 individuals find warm, safe
+              housing.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="address">
+        <p>
+          <strong>Neighbor NGO</strong> <br />
+          123, Community Lane, <br />Helping City, HC 45678, Ukraine <br /><a
+            href="mailto:info@neighbor-help.org"
+            >info@neighbor-help.org</a
+          >
+          <br />+1 (234) 567-890
+        </p>
+      </div>
+      <div class="date">
+        <p>&copy; <span id="year"></span> Neighbor, Vadym Chemariev, Ukraine</p>
+        <p>Last modification: <span id="lastModified"></span></p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "title": "Community Food Drive",
+    "date": "2025-07-10",
+    "location": "Community Center",
+    "description": "Collecting and distributing food supplies to families in need."
+  },
+  {
+    "id": 2,
+    "title": "Neighborhood Cleanup",
+    "date": "2025-07-15",
+    "location": "Main Street Park",
+    "description": "Join us to clean up local parks and streets to keep our neighborhood beautiful."
+  },
+  {
+    "id": 3,
+    "title": "Winter Clothing Donation",
+    "date": "2025-08-01",
+    "location": "Local Library",
+    "description": "Donate warm clothes for the upcoming winter season."
+  },
+  {
+    "id": 4,
+    "title": "Housing Renovation Project",
+    "date": "2025-08-20",
+    "location": "Various locations",
+    "description": "Help renovate homes for families facing housing insecurity."
+  },
+  {
+    "id": 5,
+    "title": "Volunteer Training Session",
+    "date": "2025-09-05",
+    "location": "Community Center Room 3",
+    "description": "Training new volunteers for upcoming projects and events."
+  },
+  {
+    "id": 6,
+    "title": "Backpack Drive",
+    "date": "2025-09-12",
+    "location": "City Hall",
+    "description": "Providing backpacks filled with school supplies to children."
+  },
+  {
+    "id": 7,
+    "title": "Food Bank Expansion Meeting",
+    "date": "2025-09-20",
+    "location": "Food Bank Headquarters",
+    "description": "Discussing plans for expanding food bank reach and services."
+  },
+  {
+    "id": 8,
+    "title": "Fundraising Gala",
+    "date": "2025-10-10",
+    "location": "Grand Ballroom",
+    "description": "Annual gala to raise funds for community support programs."
+  },
+  {
+    "id": 9,
+    "title": "Youth Mentoring Program",
+    "date": "2025-10-15",
+    "location": "Youth Center",
+    "description": "Mentoring youth to develop skills and confidence."
+  },
+  {
+    "id": 10,
+    "title": "Holiday Food Basket Distribution",
+    "date": "2025-11-20",
+    "location": "Community Center",
+    "description": "Distributing holiday food baskets to families."
+  },
+  {
+    "id": 11,
+    "title": "Community Health Fair",
+    "date": "2025-12-01",
+    "location": "City Park",
+    "description": "Providing free health screenings and education."
+  },
+  {
+    "id": 12,
+    "title": "Winter Shelter Program",
+    "date": "2025-12-10",
+    "location": "Various shelters",
+    "description": "Providing shelter and meals during the winter months."
+  },
+  {
+    "id": 13,
+    "title": "Spring Garden Planting",
+    "date": "2026-03-15",
+    "location": "Community Garden",
+    "description": "Planting flowers and vegetables in the community garden."
+  },
+  {
+    "id": 14,
+    "title": "Emergency Preparedness Workshop",
+    "date": "2026-04-10",
+    "location": "Community Center Room 1",
+    "description": "Teaching families how to prepare for emergencies."
+  },
+  {
+    "id": 15,
+    "title": "Annual Volunteer Recognition",
+    "date": "2026-05-05",
+    "location": "City Hall",
+    "description": "Celebrating volunteers who made a difference."
+  }
+]
