@@ -66,7 +66,7 @@ input[type="submit"]:hover {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   opacity: 1;
   transform: translateY(20px);
-  animation: fadeInUp 1s ease-in-out forwards;
+  animation: fadeInUp 5s ease-in-out forwards;
   text-align: center;
   min-width: 18rem;
   width: 100%;
@@ -78,6 +78,8 @@ input[type="submit"]:hover {
   color: #333;
   cursor: pointer;
   box-shadow: 0 0 10px #aaa;
+  animation: fadeInUp 5s ease-in-out forwards;
+  padding: 0.5rem;
 }
 
 .card h3 {
@@ -100,7 +102,7 @@ input[type="submit"]:hover {
 .card:nth-child(3) { animation-delay: 0.4s; }
 .card:nth-child(4) { animation-delay: 0.6s; }
 
-@keyframes fadeIn {
+@keyframes fadeInUp {
   from {
     transform: translateY(-30px);
     opacity: 0;
