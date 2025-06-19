@@ -3,7 +3,7 @@ const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const forecastDiv = document.querySelector('#forecast');
 
-const urlWeather = '//api.openweathermap.org/data/2.5/forecast?id=703448&appid=41de10cc104017bff4e7c2fdc89f812f&units=metric';
+const urlWeather = 'https://api.openweathermap.org/data/2.5/forecast?id=703448&appid=41de10cc104017bff4e7c2fdc89f812f&units=metric';
 
 async function apiFetch() {
   try {
@@ -33,8 +33,8 @@ function displayResults(data) {
   imageIcon.setAttribute("src", iconsrc);
     imageIcon.setAttribute("alt", desc);
     imageIcon.setAttribute("loading", "lazy");
-    imageIcon.setAttribute("width", "140");
-    imageIcon.setAttribute("height", "140");
+    imageIcon.setAttribute("width", "100");
+    imageIcon.setAttribute("height", "100");
     fig.appendChild(imageIcon);
     fig.appendChild(figcapt);
   figcapt.textContent = `${desc}`;
