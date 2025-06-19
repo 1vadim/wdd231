@@ -1,47 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Form Submission Result - Neighbor</title>
-    <link rel="stylesheet" href="styles/style.css"   />
-  <script src="scripts/events.js" type="module"></script>
-  <script src="scripts/main.js" type="module"></script>
-  <script src="scripts/modal.js" type="module"></script>
-  <script src="scripts/utils.js" type="module"></script>
-  <script defer src="scripts/handler.js"></script>
-  <link rel="icon" href="favicon.ico" />
-</head>
-<body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">Neighbor</div>
-      <button class="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="nav-menu">
-        &#9776;
-      </button>
-      <ul id="nav-menu" class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Form Submission Result - Neighbor</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/events.js" type="module"></script>
+    <script src="scripts/main.js" type="module"></script>
+    <script src="scripts/modal.js" type="module"></script>
+    <script src="scripts/utils.js" type="module"></script>
+    <script defer src="scripts/handler.js"></script>
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Neighbor</div>
+        <button
+          class="hamburger"
+          aria-label="Menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          &#9776;
+        </button>
+        <ul id="nav-menu" class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main>
-    <section class="form-result">
-      <h1>Form Submission Details</h1>
-      <div id="result-container">
-        <p>Loading submission data...</p>
-      </div>
-      <a href="contact.html" class="btn">Back to Contact</a>
-    </section>
-  </main>
+    <main>
+      <section class="form-result">
+        <h1>Form Submission Details</h1>
+        <div id="result-container">
+          <p>Loading submission data...</p>
+        </div>
+        <a href="contact.html" class="btn">Back to Contact</a>
+      </section>
+    </main>
 
-  <footer>
-    <p>&copy; 2025 Neighbor. All rights reserved.</p>
-  </footer>
-</body>
+    <footer>
+      <p>&copy; <span id="year"></span> Neighbor, Vadym Chemariev, Ukraine</p>
+    </footer>
+  </body>
 </html>
