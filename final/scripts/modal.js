@@ -1,5 +1,3 @@
-// modal.js
-
 import { getEventById } from './events.js';
 
 export async function setupEventModal(modalId, containerId) {
@@ -14,7 +12,6 @@ export async function setupEventModal(modalId, containerId) {
     return;
   }
 
-  // Open modal with event details
   container.addEventListener('click', (e) => {
     if (e.target.classList.contains('details-btn')) {
       const eventId = Number(e.target.dataset.id);
@@ -34,8 +31,7 @@ export async function setupEventModal(modalId, containerId) {
     }
   });
 
-  // Close modal function
-  function closeModal() {
+ function closeModal() {
     modal.classList.remove('active');
     modal.setAttribute('aria-hidden', 'true');
   }

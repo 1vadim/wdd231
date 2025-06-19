@@ -1,5 +1,3 @@
-// events.js
-
 import { saveToLocalStorage, loadFromLocalStorage } from './utils.js';
 
 const EVENTS_URL = 'data/events.json';
@@ -13,10 +11,9 @@ export async function loadEvents(containerId) {
     if (!response.ok) throw new Error('Network response was not ok');
     const events = await response.json();
 
-    // Save events to localStorage (example of persistence)
     saveToLocalStorage('neighborEvents', events);
 
-    // Use map to create HTML strings
+   
     const eventsHTML = events.map(event => `
       <article class="event-card" tabindex="0" data-id="${event.id}">
         <h3>${event.title}</h3>
@@ -35,7 +32,6 @@ export async function loadEvents(containerId) {
   }
 }
 
-// Helper to get event by ID from localStorage
 export function getEventById(id) {
   const events = loadFromLocalStorage('neighborEvents') || [];
   return events.find(ev => ev.id === id);
