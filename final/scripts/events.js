@@ -16,7 +16,7 @@ export async function loadEvents(containerId) {
    
     const eventsHTML = events.map(event => `
       <article class="event-card" tabindex="0" data-id="${event.id}">
-        <h3>${event.title}</h3>
+        <h2>${event.title}</h2>
         <p><strong>Date:</strong> ${new Date(event.date).toLocaleDateString()}</p>
         <p><strong>Location:</strong> ${event.location}</p>
         <p>${event.description}</p>
