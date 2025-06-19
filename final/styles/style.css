@@ -108,7 +108,7 @@ main {
   cursor: pointer;
 }
 
-#donate, #volunteer-section, #assistance-section {
+#donate, #volunteer, #assistance {
   max-width: 600px;
 }
 
